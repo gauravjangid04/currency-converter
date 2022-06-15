@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="universal">
+
+        <div class="inputForm">
+            <div class="selectCurrency" id="fromcurrency">
+                <button class="selectCurrencybtn"> <span id="selectCurrencytext">Select Currency</span> <span
+                        class="fas fa-caret-down arrow"></span></button>
+                <div class="listOfCurrencies">
+                    <button class="links"><span>INR</span></button>
+                    <button class="links"><span>EUR</span></button>
+                    <button class="links"><span>CNY</span></button>
+                    <button class="links"><span>AUD</span></button>
+                </div>
+            </div>
+
+            <div class="selectCurrency2" id="tocurrency">
+                <button class="selectCurrencybtn2"> <span id="selectCurrencytext2">To Currency</span> <span
+                        class="fas fa-caret-down arrow2"></span></button>
+                <div class="listOfCurrencies2">
+                    <button class="links2"><span>INR</span></button>
+                    <button class="links2"><span>EUR</span></button>
+                    <button class="links2"><span>CNY</span></button>
+                    <button class="links2"><span>AUD</span></button>
+                </div>
+            </div>
+
+            <div class="currencyValue">
+                <input type="number" name="name" id="valueToChange" autocomplete="off" required>
+                <label for="name" class="label-name">
+                    <span class="content-name">Value</span>
+                </label>
+            </div>
+
+            
+    
+            <div>
+                <button class="usd">
+                    Get Value
+                </button>
+            </div><br>
+            <div class="resultMessage">
+                <span id="success">SUCCESS !!</span>
+                <span id="failure">FAILURE !! Select Currency</span>
+                <span id="novalue">Enter Some Value</span>
+            </div>
+        </div>
+    
+        <div class="verticalLine"></div>
+        <div class="dollarDiv">
+            <div>
+                <p id="finalresult">$ 0</p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="../../Jquery/jquery-3.6.0.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="index.js"></script>
+
+</html>

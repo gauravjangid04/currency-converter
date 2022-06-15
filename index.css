@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inputForm{
+    float: left;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+.verticalLine{
+    margin-left: 150px;
+    border-left: 6px solid rgb(61, 68, 61);
+    height: 250px;
+    margin-right: 150px;
+    left: 50%; 
+    margin-top: 50px;
+    top: 0;
+
+}
+.dollarDiv{
+    float: right;
+    width: 30%;
+    margin-top: 150px;
+}
+
+body{
+    height: 60vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.universal{
+    display: flex;
+    justify-content: center;
+}
+
+.selectCurrency{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.selectCurrency2{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.selectCurrencybtn{
+    background-color: rgb(101, 112, 233);
+}
+.selectCurrencybtn2{
+    background-color: rgb(101, 112, 233);
+}
+
+#finalresult{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.selectCurrencybtn:hover{
+   cursor: pointer;
+}
+.selectCurrencybtn2:hover{
+    cursor: pointer;
+ }
+
+.selectCurrencybtn,.links{
+    padding: 12px; 
+    font-size: 1.2em;
+    font-family: futura Md BT;
+    border: none;
+    outline: none;
+    width: 200px;
+    color: azure;
+    transition: 0.3s;
+}
+.selectCurrencybtn2,.links2{
+    padding: 12px; 
+    font-size: 1.2em;
+    font-family: futura Md BT;
+    border: none;
+    outline: none;
+    width: 200px;
+    color: azure;
+    transition: 0.3s;
+}
+
+.listOfCurrencies{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+.listOfCurrencies2{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+.newlist{
+    transform:scaleY(1);
+}
+
+.resultMessage{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+}
+#success{
+    display: none;
+    font-weight: bolder;
+    color: rgb(36, 58, 4);
+}
+#failure{
+    display: none;
+    color: rgb(64, 9, 9);
+}
+
+#novalue{
+    display: none;
+    color: rgba(19, 7, 117, 0.971);
+}
+
+.links span{
+    float: left;
+}
+.links{
+    background-color: rgb(101, 112, 233); 
+
+}
+.links2 span{
+    float: left;
+}
+.links2{
+    background-color: rgb(101, 112, 233); 
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.links:hover {
+    background-color: rgb(14, 9, 168);
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.links2:hover {
+    background-color: rgb(14, 9, 168);
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+div.selectCurrency button.has-submenu:after{
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "FontAwesome"; 
+    content: "\f107";
+    font-size: 16px;
+}
+
+div.selectCurrency2 button.has-submenu:after{
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "FontAwesome"; 
+    content: "\f107";
+    font-size: 16px;
+}
+
+.selectCurrencybtn span{
+    float: left;
+    line-height: 27px;
+}
+
+.selectCurrencybtn .arrow{
+    float: right;
+}
+
+.selectCurrencybtn2 span{
+    float: left;
+    line-height: 27px;
+}
+
+.selectCurrencybtn2 .arrow2{
+    float: right;
+}
+
+.rotate{
+    transform: rotate(-180deg);
+}
+
+.content-name{
+    padding-left: 10px;
+}
+
+.currencyValue{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+}
+
+.currencyValue input{
+    width: 100%;
+    padding-left: 15px;
+    height: 100%;
+    color: #595f6e;
+    padding-top:20px;
+    border:none;
+    outline: none;
+    background-color: rgb(212, 212, 227);
+}
+
+.currencyValue label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.currencyValue label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3x solid #5fa8d3;
+    transform: translateX(-100%);
+    transition: transform all 0.3s ease;
+
+}
+
+.usd{
+    font-size: large;
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: rgb(248, 101, 4);
+    height: 50px;
+    width: 100%;
+    border-radius: 0.2rem;
+    border: none;
+}
+.usd:hover{
+    cursor: pointer;
+}
+
+.content-name{
+    font-size: 20px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 0.3s ease;
+}
+
+.currencyValue label:focus{
+    border-bottom: 1px solid rgb(164, 76, 216);
+}
+
+.currencyValue input:focus + .label-name .content-name,
+.currencyValue input:valid + .label-name .content-name{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: #9e4dbb;
+    
+}
+
+.currencyValue input:focus .label-name::after, .currencyValue input:valid + .label-name::after {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width:500px) {
+
+    body{
+        justify-content: center;
+    }
+    
+    .usd{
+        visibility: hidden;
+        display: none;
+    }
+    .selectCurrencybtn{
+        width: 100%;
+        height: 10%;
+    }
+    .selectCurrencybtn2{
+        width: 100%;
+        height: 10%;
+    }
+    .selectCurrency{
+        width: 100%;
+    }
+    .selectCurrency2{
+        width: 100%;
+    }
+    .universal{
+        display: block;
+        justify-content: center;
+    }
+    .inputForm{
+        float: none;
+        margin-left: 10%;
+        margin-top: none;
+        margin-right: 30%;
+    }
+    .verticalLine{
+        border: 3px solid rgb(61, 68, 61);
+        border-radius: 5px;
+        width: 69%;
+        height: 0px;
+        margin: 3px 2px;
+        display: none;
+    }
+    .dollarDiv{
+        float: none;
+        width: 100%;
+        margin-top: 0%;
+        margin-left: 30%;
+    }
+    body{
+        height: none;
+        align-items: center;
+        flex-direction: column;
+        
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .listOfCurrencies{
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.3s;
+    }
+    .listOfCurrencies2{
+        position: absolute;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.3s;
+    }
+    .newlist{
+        transform:scaleY(1);
+    }
+    
+    .selectCurrencybtn:hover{
+        cursor: pointer;
+     }
+     
+     .selectCurrencybtn,.links{
+         padding: 12px; 
+         font-size: 1.2em;
+         font-family: futura Md BT;
+         border: none;
+         outline: none;
+         width: 100%;
+         color: azure;
+         transition: 0.3s;
+     }
+
+     .selectCurrencybtn2:hover{
+        cursor: pointer;
+     }
+     
+     .selectCurrencybtn2,.links2{
+         padding: 12px; 
+         font-size: 1.2em;
+         font-family: futura Md BT;
+         border: none;
+         outline: none;
+         width: 100%;
+         color: azure;
+         transition: 0.3s;
+     }
+     
+}
+
+
