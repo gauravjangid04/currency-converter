@@ -45,17 +45,7 @@ body{
     position: relative;
 }
 
-.selectCurrency2{
-    width: 100%;
-    height: 20%;
-    margin-bottom: 20px;
-    position: relative;
-}
-
 .selectCurrencybtn{
-    background-color: rgb(101, 112, 233);
-}
-.selectCurrencybtn2{
     background-color: rgb(101, 112, 233);
 }
 
@@ -67,9 +57,6 @@ body{
 .selectCurrencybtn:hover{
    cursor: pointer;
 }
-.selectCurrencybtn2:hover{
-    cursor: pointer;
- }
 
 .selectCurrencybtn,.links{
     padding: 12px; 
@@ -81,24 +68,8 @@ body{
     color: azure;
     transition: 0.3s;
 }
-.selectCurrencybtn2,.links2{
-    padding: 12px; 
-    font-size: 1.2em;
-    font-family: futura Md BT;
-    border: none;
-    outline: none;
-    width: 200px;
-    color: azure;
-    transition: 0.3s;
-}
 
 .listOfCurrencies{
-    position: absolute;
-    transform: scaleY(0);
-    transform-origin: top;
-    transition: 0.3s;
-}
-.listOfCurrencies2{
     position: absolute;
     transform: scaleY(0);
     transform-origin: top;
@@ -135,13 +106,6 @@ body{
     background-color: rgb(101, 112, 233); 
 
 }
-.links2 span{
-    float: left;
-}
-.links2{
-    background-color: rgb(101, 112, 233); 
-
-}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -158,24 +122,8 @@ input[type=number] {
     cursor: pointer;
 
 }
-.links2:hover {
-    background-color: rgb(14, 9, 168);
-    transform: scale(1.1);
-    cursor: pointer;
-
-}
 
 div.selectCurrency button.has-submenu:after{
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: "FontAwesome"; 
-    content: "\f107";
-    font-size: 16px;
-}
-
-div.selectCurrency2 button.has-submenu:after{
     position: absolute;
     right: 18px;
     top: 50%;
@@ -191,15 +139,6 @@ div.selectCurrency2 button.has-submenu:after{
 }
 
 .selectCurrencybtn .arrow{
-    float: right;
-}
-
-.selectCurrencybtn2 span{
-    float: left;
-    line-height: 27px;
-}
-
-.selectCurrencybtn2 .arrow2{
     float: right;
 }
 
@@ -307,14 +246,7 @@ div.selectCurrency2 button.has-submenu:after{
         width: 100%;
         height: 10%;
     }
-    .selectCurrencybtn2{
-        width: 100%;
-        height: 10%;
-    }
     .selectCurrency{
-        width: 100%;
-    }
-    .selectCurrency2{
         width: 100%;
     }
     .universal{
@@ -356,12 +288,6 @@ div.selectCurrency2 button.has-submenu:after{
         transform-origin: top;
         transition: 0.3s;
     }
-    .listOfCurrencies2{
-        position: absolute;
-        transform: scaleY(0);
-        transform-origin: top;
-        transition: 0.3s;
-    }
     .newlist{
         transform:scaleY(1);
     }
@@ -380,22 +306,4 @@ div.selectCurrency2 button.has-submenu:after{
          color: azure;
          transition: 0.3s;
      }
-
-     .selectCurrencybtn2:hover{
-        cursor: pointer;
-     }
-     
-     .selectCurrencybtn2,.links2{
-         padding: 12px; 
-         font-size: 1.2em;
-         font-family: futura Md BT;
-         border: none;
-         outline: none;
-         width: 100%;
-         color: azure;
-         transition: 0.3s;
-     }
-     
 }
-
-
