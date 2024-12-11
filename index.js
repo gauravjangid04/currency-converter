@@ -113,6 +113,7 @@ $(document).ready(function () {
           window.dataLayer.push({
             event: 'add_to_cart',
             ecommerce: {
+              user_email: "thisisus@gmail.com",
               currency: 'usd',
               value: 200.54,
               items: items
